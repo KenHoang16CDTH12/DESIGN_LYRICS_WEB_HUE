@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noarchive">
+    <meta name="name" content="Ken Hoang Lyrics">
+    <meta name="keywords" content="lyrics,music,song lyrics,songs,paroles">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home Page - KenHoangLyrics</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="icon" type="image/gif" href="./image/logo.png" />
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!-- Snow -->
+    <script>
+            var snowStorm=function(e,t)
+            {function i(e,t)
+            {return isNaN(t)&&(t=0),Math.random()*e+t}
+            function s(e){return 1===parseInt(i(2),10)?-1*e:e}
+            function n(){e.setTimeout(function(){a.start(!0)},20),
+            a.events.remove(r?t:e,"mousemove",n)}function l()
+            {a.excludeMobile&&m||n(),a.events.remove(e,"load",l)}
+            this.autoStart=!0,this.excludeMobile=!0,this.flakesMax=256,this.flakesMaxActive=128,this.animationInterval=50,this.useGPU=!0,
+            this.className=null,this.excludeMobile=!0,
+            this.flakeBottom=null,this.followMouse=!0,this.snowColor="#fff",this.snowCharacter="&bull;",
+            this.snowStick=!0,this.targetElement=null,this.useMeltEffect=!0,this.useTwinkleEffect=!1,
+            this.usePositionFixed=!1,this.usePixelPosition=!1,
+            this.freezeOnBlur=!0,this.flakeLeftOffset=0,this.flakeRightOffset=0,this.flakeWidth=30,this.flakeHeight=30,this.vMaxX=5,this.vMaxY=4,this.zIndex=1e3;var o,a=this,r=navigator.userAgent.match(/msie/i),f=navigator.userAgent.match(/msie 6/i),m=navigator.userAgent.match(/mobile|opera m(ob|in)/i),h=r&&"BackCompat"===t.compatMode||f,u=null,c=null,d=null,v=null,p=null,y=null,k=null,g=1,x=!1,w=!1,F=function(){try{t.createElement("div").style.opacity="0.5"}catch(e){return!1}return!0}(),b=!1,E=t.createDocumentFragment();return o=function(){function i(e){return void 0!==l.style[e]?e:null}var s,n=e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(t){e.setTimeout(t,1e3/(a.animationInterval||20))};s=n?function(){return n.apply(e,arguments)}:null;var l;l=t.createElement("div");var o={transform:{ie:i("-ms-transform"),moz:i("MozTransform"),opera:i("OTransform"),webkit:i("webkitTransform"),w3:i("transform"),prop:null},getAnimationFrame:s};return o.transform.prop=o.transform.w3||o.transform.moz||o.transform.webkit||o.transform.ie||o.transform.opera,l=null,o}(),this.timer=null,this.flakes=[],this.disabled=!1,this.active=!1,this.meltFrameCount=20,this.meltFrames=[],this.setXY=function(e,t,i){if(!e)return!1;a.usePixelPosition||w?(e.style.left=t-a.flakeWidth+"px",e.style.top=i-a.flakeHeight+"px"):h?(e.style.right=100-t/u*100+"%",e.style.top=Math.min(i,p-a.flakeHeight)+"px"):a.flakeBottom?(e.style.right=100-t/u*100+"%",e.style.top=Math.min(i,p-a.flakeHeight)+"px"):(e.style.right=100-t/u*100+"%",e.style.bottom=100-i/d*100+"%")},this.events=function(){function t(e){var t=n.call(e),i=t.length;return s?(t[1]="on"+t[1],i>3&&t.pop()):3===i&&t.push(!1),t}function i(e,t){var i=e.shift(),n=[l[t]];s?i[n](e[0],e[1]):i[n].apply(i,e)}var s=!e.addEventListener&&e.attachEvent,n=Array.prototype.slice,l={add:s?"attachEvent":"addEventListener",remove:s?"detachEvent":"removeEventListener"};return{add:function(){i(t(arguments),"add")},remove:function(){i(t(arguments),"remove")}}}(),this.randomizeWind=function(){var e;if(y=s(i(a.vMaxX,.2)),k=i(a.vMaxY,.2),this.flakes)for(e=0;e<this.flakes.length;e++)this.flakes[e].active&&this.flakes[e].setVelocities()},this.scrollHandler=function(){var i;if(v=a.flakeBottom?0:parseInt(e.scrollY||t.documentElement.scrollTop||(h?t.body.scrollTop:0),10),isNaN(v)&&(v=0),!x&&!a.flakeBottom&&a.flakes)for(i=0;i<a.flakes.length;i++)0===a.flakes[i].active&&a.flakes[i].stick()},this.resizeHandler=function(){e.innerWidth||e.innerHeight?(u=e.innerWidth-16-a.flakeRightOffset,d=a.flakeBottom||e.innerHeight):(u=(t.documentElement.clientWidth||t.body.clientWidth||t.body.scrollWidth)-(r?0:8)-a.flakeRightOffset,d=a.flakeBottom||t.documentElement.clientHeight||t.body.clientHeight||t.body.scrollHeight),p=t.body.offsetHeight,c=parseInt(u/2,10)},this.resizeHandlerAlt=function(){u=a.targetElement.offsetWidth-a.flakeRightOffset,d=a.flakeBottom||a.targetElement.offsetHeight,c=parseInt(u/2,10),p=t.body.offsetHeight},this.freeze=function(){if(a.disabled)return!1;a.disabled=1,a.timer=null},this.resume=function(){if(!a.disabled)return!1;a.disabled=0,a.timerInit()},this.toggleSnow=function(){a.flakes.length?(a.active=!a.active,a.active?(a.show(),a.resume()):(a.stop(),a.freeze())):a.start()},this.stop=function(){var i;for(this.freeze(),i=0;i<this.flakes.length;i++)this.flakes[i].o.style.display="none";a.events.remove(e,"scroll",a.scrollHandler),a.events.remove(e,"resize",a.resizeHandler),a.freezeOnBlur&&(r?(a.events.remove(t,"focusout",a.freeze),a.events.remove(t,"focusin",a.resume)):(a.events.remove(e,"blur",a.freeze),a.events.remove(e,"focus",a.resume)))},this.show=function(){var e;for(e=0;e<this.flakes.length;e++)this.flakes[e].o.style.display="block"},this.SnowFlake=function(e,s,n){var l=this;this.type=e,this.x=s||parseInt(i(u-20),10),this.y=isNaN(n)?-i(d)-12:n,this.vX=null,this.vY=null,this.vAmpTypes=[1,1.2,1.4,1.6,1.8],this.vAmp=this.vAmpTypes[this.type]||1,this.melting=!1,this.meltFrameCount=a.meltFrameCount,this.meltFrames=a.meltFrames,this.meltFrame=0,this.twinkleFrame=0,this.active=1,this.fontSize=10+this.type/5*10,this.o=t.createElement("div"),this.o.innerHTML=a.snowCharacter,a.className&&this.o.setAttribute("class",a.className),this.o.style.color=a.snowColor,this.o.style.position=x?"fixed":"absolute",a.useGPU&&o.transform.prop&&(this.o.style[o.transform.prop]="translate3d(0px, 0px, 0px)"),this.o.style.width=a.flakeWidth+"px",this.o.style.height=a.flakeHeight+"px",this.o.style.fontFamily="arial,verdana",this.o.style.cursor="default",this.o.style.overflow="hidden",this.o.style.fontWeight="normal",this.o.style.zIndex=a.zIndex,E.appendChild(this.o),this.refresh=function(){if(isNaN(l.x)||isNaN(l.y))return!1;a.setXY(l.o,l.x,l.y)},this.stick=function(){h||a.targetElement!==t.documentElement&&a.targetElement!==t.body?l.o.style.top=d+v-a.flakeHeight+"px":a.flakeBottom?l.o.style.top=a.flakeBottom+"px":(l.o.style.display="none",l.o.style.bottom="0%",l.o.style.position="fixed",l.o.style.display="block")},this.vCheck=function(){l.vX>=0&&l.vX<.2?l.vX=.2:l.vX<0&&l.vX>-.2&&(l.vX=-.2),l.vY>=0&&l.vY<.2&&(l.vY=.2)},this.move=function(){var e=l.vX*g;l.x+=e,l.y+=l.vY*l.vAmp,l.x>=u||u-l.x<a.flakeWidth?l.x=0:e<0&&l.x-a.flakeLeftOffset<-a.flakeWidth&&(l.x=u-a.flakeWidth-1),l.refresh(),d+v-l.y+a.flakeHeight<a.flakeHeight?(l.active=0,a.snowStick?l.stick():l.recycle()):(a.useMeltEffect&&l.active&&l.type<3&&!l.melting&&Math.random()>.998&&(l.melting=!0,l.melt()),a.useTwinkleEffect&&(l.twinkleFrame<0?Math.random()>.97&&(l.twinkleFrame=parseInt(8*Math.random(),10)):(l.twinkleFrame--,F?l.o.style.opacity=l.twinkleFrame&&l.twinkleFrame%2==0?0:1:l.o.style.visibility=l.twinkleFrame&&l.twinkleFrame%2==0?"hidden":"visible")))},this.animate=function(){l.move()},this.setVelocities=function(){l.vX=y+i(.12*a.vMaxX,.1),l.vY=k+i(.12*a.vMaxY,.1)},this.setOpacity=function(e,t){if(!F)return!1;e.style.opacity=t},this.melt=function(){a.useMeltEffect&&l.melting&&l.meltFrame<l.meltFrameCount?(l.setOpacity(l.o,l.meltFrames[l.meltFrame]),l.o.style.fontSize=l.fontSize-l.fontSize*(l.meltFrame/l.meltFrameCount)+"px",l.o.style.lineHeight=a.flakeHeight+2+.75*a.flakeHeight*(l.meltFrame/l.meltFrameCount)+"px",l.meltFrame++):l.recycle()},this.recycle=function(){l.o.style.display="none",l.o.style.position=x?"fixed":"absolute",l.o.style.bottom="auto",l.setVelocities(),l.vCheck(),l.meltFrame=0,l.melting=!1,l.setOpacity(l.o,1),l.o.style.padding="0px",l.o.style.margin="0px",l.o.style.fontSize=l.fontSize+"px",l.o.style.lineHeight=a.flakeHeight+2+"px",l.o.style.textAlign="center",l.o.style.verticalAlign="baseline",l.x=parseInt(i(u-a.flakeWidth-20),10),l.y=parseInt(-1*i(d),10)-a.flakeHeight,l.refresh(),l.o.style.display="block",l.active=1},this.recycle(),this.refresh()},this.snow=function(){var e,t,s=0,n=null;for(e=0,t=a.flakes.length;e<t;e++)1===a.flakes[e].active&&(a.flakes[e].move(),s++),a.flakes[e].melting&&a.flakes[e].melt();s<a.flakesMaxActive&&0===(n=a.flakes[parseInt(i(a.flakes.length),10)]).active&&(n.melting=!0),a.timer&&o.getAnimationFrame(a.snow)},this.mouseMove=function(e){if(!a.followMouse)return!0;var t=parseInt(e.clientX,10);g=t<c?t/c*2-2:(t-=c)/c*2},this.createSnow=function(e,t){var s;for(s=0;s<e;s++)a.flakes[a.flakes.length]=new a.SnowFlake(parseInt(i(6),10)),(t||s>a.flakesMaxActive)&&(a.flakes[a.flakes.length-1].active=-1);a.targetElement.appendChild(E)},this.timerInit=function(){a.timer=!0,a.snow()},this.init=function(){var i;for(i=0;i<a.meltFrameCount;i++)a.meltFrames.push(1-i/a.meltFrameCount);a.randomizeWind(),a.createSnow(a.flakesMax),a.events.add(e,"resize",a.resizeHandler),a.events.add(e,"scroll",a.scrollHandler),a.freezeOnBlur&&(r?(a.events.add(t,"focusout",a.freeze),a.events.add(t,"focusin",a.resume)):(a.events.add(e,"blur",a.freeze),a.events.add(e,"focus",a.resume))),a.resizeHandler(),a.scrollHandler(),a.followMouse&&a.events.add(r?t:e,"mousemove",a.mouseMove),a.animationInterval=Math.max(20,a.animationInterval),a.timerInit()},this.start=function(i){if(b){if(i)return!0}else b=!0;if("string"==typeof a.targetElement){var s=a.targetElement;if(a.targetElement=t.getElementById(s),!a.targetElement)throw new Error('Snowstorm: Unable to get targetElement "'+s+'"')}if(a.targetElement||(a.targetElement=t.body||t.documentElement),a.targetElement!==t.documentElement&&a.targetElement!==t.body&&(a.resizeHandler=a.resizeHandlerAlt,a.usePixelPosition=!0),a.resizeHandler(),a.usePositionFixed=a.usePositionFixed&&!h&&!a.flakeBottom,e.getComputedStyle)try{w="relative"===e.getComputedStyle(a.targetElement,null).getPropertyValue("position")}catch(e){w=!1}x=a.usePositionFixed,u&&d&&!a.disabled&&(a.init(),a.active=!0)},
+            a.autoStart&&a.events.add(e,"load",l,!1),this}(window,document);
+        
+        </script>
+</head>
+<body class="margin50">
+        <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#search-collapse"><span class="glyphicon glyphicon-search"></span></button>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#artists-collapse"><span class="glyphicon glyphicon-th-list"></span></button>
+                    <a class="navbar-brand" href="index.html">
+                        <img alt="minhhoanglyrics.com" class="pull-left" style="max-height:40px; margin-top:-10px;" src="./image/logo.png"></a>
+                  </div>
+                  <ul class="collapse navbar-collapse nav navbar-nav" id="artists-collapse">
+                  <li>
+                  <div class="btn-group text-center" role="group">
+                  <a class="btn btn-menu" href="index.html">TRANG CHỦ</a>
+                  <a class="btn btn-menu" href="video.html">VIDEO</a>
+                  <a class="btn btn-menu" href="bxh.html">BXH</a>
+                  <a class="btn btn-menu" href="index.html">CHỦ ĐỀ</a>
+                  <a class="btn btn-menu" href="index.html">ALBUM</a>            
+                  <a class="btn btn-menu" href="index.html">NGHỆ SĨ</a>        
+                  <a class="btn btn-menu" href="index.html">TOP 100</a>
+                  <a class="btn btn-menu" href="index.html">ABOUT</a>
+               
+                  </div>
+                  </li>
+                  </ul>
+                  <div class="collapse navbar-collapse" id="search-collapse">
+                      <form class="navbar-form navbar-right search" method="" action="" role="search">
+                       <div class="input-group">  
+                      <input type="text" class="form-control" placeholder="" name="q" id="q">
+                             <span class="input-group-btn">
+                                <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i></span> Search</button>
+                            </span>
+                     </div>   
+                     <a class="btn btn-menu" href="login.html">LOGIN</a>
+                  </form>
+                  </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container -->
+                </nav>
+              
+              <!-- main -->
+                <div class="container main-page">
+                <div class="row">
+                        <div class="top">
+                                <div class="left">
+                                    <h2>Welcome to KenHoangLyrics.vn</h2>
+                                    <p>Âm nhạc là cách cảm xúc trở thành âm thanh<br>
+                                        Người tràn ngập âm nhạc trong lòng mới có thể tràn ngập lòng yêu mến đối với những thứ đẹp nhất.
+                                </div>                    
+                            </div>
+                </div>
+                <div class="row">
+                           <div class="col-xs-12 col-lg-8 col-lg-offset-2 text-center artist-col">
+                            <h1>TOP 12 BÀI HÁT</h1>
+                           </div>
+                </div>
+              <!-- what's hot placeholder -->
+              <div class="row">
+
+                <div class="col-xs-6 col-sm-3 col-lg-2 col-lg-offset-2 albuma">
+                    <a  target="_blank" href="intheendlyrics.html">
+                        <img src="./image/linkinpark.png" alt="">
+                    </a>
+                    <a  target="_blank" href="intheendlyrics.html">Linkin Park</a>
+                    "In The End"</div>
+
+                <div class="col-xs-6 col-sm-3 col-lg-2 albuma">
+                    <a target="_blank"  href="payphonelyrics.html">
+                        <img src="./image/maroon5.jpg" alt="">
+                    </a>
+                    <a target="_blank"  href="payphonelyrics.html">Maroon 5</a>
+                     "Payphone"</div>
+
+                <div class="clearfix visible-xs-block"></div>
+
+                <div class="col-xs-6 col-sm-3 col-lg-2 albuma">
+                    <a  target="_blank" href="lockedaway.html">
+                        <img src="./image/lockedaway.jpg" alt="">
+                    </a>
+                    <a  target="_blank" href="lockedaway.html">Adam levine</a>
+                     "Locked Away"</div>
+
+                <div class="col-xs-6 col-sm-3 col-lg-2 albuma">
+                    <a  target="_blank" href="seeyouagainlyrics.html">
+                        <img src="./image/seeyouagain.png" alt="">
+                    </a>
+                        <a target="_blank" href="seeyouagainlyrics.html">Wiz Khalifa</a> 
+                        "See You Again"</div>
+              </div>
+
+              <div class="row">
+                <div class="col-xs-6 col-sm-3 col-lg-2 col-lg-offset-2 albuma">
+                    <a target="_blank"  href="allofmelyrics.html">
+                        <img src="./image/allofme.jpg" alt="">
+                    </a>
+                        <a href="allofmelyrics.html">John Legend</a>
+                         "All Of Me"</div>
+
+                <div class="col-xs-6 col-sm-3 col-lg-2 albuma">
+                    <a target="_blank"  href="attention.html">
+                        <img src="./image/attention.jpg" alt="">
+                    </a>
+                    <a target="_blank"   href="index.html">Charlie Puth</a>
+                     "Attention"</div>
+
+                <div class="clearfix visible-xs-block"></div>
+                
+                <div class="col-xs-6 col-sm-3 col-lg-2 albuma">
+                    <a target="_blank"  href="rollinginthedeep.html">
+                        <img src="./image/rollinginthedeep.jpg" alt="">
+                    </a>
+                        <a target="_blank" href="rollinginthedeep.html">Adele</a>
+                     "Rolling In The Deep"</div>
+
+                <div class="col-xs-6 col-sm-3 col-lg-2 albuma">
+                    <a target="_blank" href="shapeofyou.html">
+                        <img src="./image/shapeofyou.jpg" alt="">
+                    </a>
+                    <a target="_blank" href="shapeofyou.html">Ed Sheeran</a>
+                     "Shape Of You"</div>
+
+              </div>
+
+              <div class="row">
+                <div class="col-xs-6 col-sm-3 col-lg-2 col-lg-offset-2 albuma">
+                    <a target="_blank" href="signofthetimes.html">
+                        <img src="./image/signofthetimes.jpg" alt="">
+                    </a>
+                    <a target="_blank" href="signofthetimes.html">Harry Styles</a> 
+                    "Sign Of The Times"</div>
+
+                <div class="col-xs-6 col-sm-3 col-lg-2 albuma">
+                    <a target="_blank" href="titanium.html">
+                        <img src="./image/titanium.jpg" alt="">
+                    </a>
+                    <a target="_blank" href="titanium.html">David Guetta</a> 
+                    "Titanium"</div>
+
+                <div class="clearfix visible-xs-block"></div>
+
+                <div class="col-xs-6 col-sm-3 col-lg-2 albuma">
+                    <a target="_blank" href="treatyoubetter.html">
+                        <img src="./image/treatyoubetter.png" alt="">
+                    </a>
+                    <a target="_blank" href="treatyoubetter.html">Shawn Mendes</a>
+                     "Treat You Better"</div>
+
+                <div class="col-xs-6 col-sm-3 col-lg-2 albuma">
+                    <a target="_blank" href="wakemeup.html">
+                        <img src="./image/wakemeup.jpg" alt=""></a>
+                        <a target="_blank" href="wakemeup.html">Avicii</a>
+                         "Wake Me Up"</div>
+              </div>
+              <!-- end of what's hot placeholder -->
+                </div>  <!-- container main-page -->
+              <!-- bot ban -->
+        <div class="footer-wrap">
+            <!-- Footer -->
+			<section id="footer">
+                    <footer>
+                        <ul class="icons">
+                            <li>
+                                <a target="_blank" href="https://twitter.com/?lang=en" class="icon"> 
+                                <img src="./image/twitter.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com" class="icon">
+                                <img src="./image/facebook.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.instagram.com/kenhoang16cdth31/" class="icon">
+                                <img src="./image/instagram.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://dribbble.com/" class="icon">
+                                    <img src="./image/dribbble.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.google.com" class="icon">
+                                    <img src="./image/google-plus.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="copyright">
+                            <li>&copy; Viet Nam</li><li>Design: <a href="index.html">Minh Hoang</a></li><li>Demo Images: <a href="index.html">Minh Hoang</a></li>
+                        </ul>
+                    </footer>
+                </section>
+                </div>
+            
+</body>
+</html>
